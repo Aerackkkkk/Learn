@@ -1,26 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Arithmetic using JS</title>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="style.css"
 </head>
+
 <body>
-    <div>
-    <h1>Arithmetic Functions</h1>
-    <h2>Here on this section we perform addition</h2>
-    <p id="sum"></p>
-    <p>Here the two numbers added are X=5 and Z=10.</p>
-    </div>
-    <div>
-    <p id="sub"></p>
-    <p>Here the two numbers subtracted are X=5 and Z=10.</p>
-    </div>
-    <div>
-        <p id="mul"></p>
-    <p>Here the two numbers multiplied are X=5 and Z=10.</p>
-    </div>
-    <script src="script.js"></script>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Enter Name</label>
+                        <input type="text" name="productCode" id="productCode" placeholder="Enter Your Name">
+                    </div>
+                    <div>
+                        <label for="product">User Name</label>
+                        <input type="text" name="product" id="product" placeholder="Enter Your User Name">
+                    </div>
+                    <div>
+                        <label for="qty">Address</label>
+                        <input type="text" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">Email</label><br>
+                        <input type="text" name="perPrice" id="perPrice" placeholder="Enter Your Email ID" style="height: 20px;width: 80%; font-size: 20px;">
+
+                    </div>
+
+                    <div class="form_action--button" >
+                        <input type="submit" value="Submit" style="background-color: aqua;">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>User Name</th>
+                                <th>Address</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 </html>
