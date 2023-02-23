@@ -1,73 +1,204 @@
-body{
-   background-image: url('background.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+* {
+    top: 0;
+    margin: 0;
 }
 
-table{
-    width: 80%;
-    margin: 40px auto;
-    background: rgb(84, 108, 131);
+nav{
+    display: flex;
+    background-color: orangered;
+    justify-content: space-around;
+    padding: 12px;
 }
 
-table.list{
-    text-align: center;
-    width: 100%;
-}
-
-td{
-    border: 1px solid rgb(196, 36, 36);
+nav .container{
+    display: flex;
+    /* margin-right:60%; */
     text-align: left;
-    padding: 8px 15px;
+    width: 60%;
+    gap: 30px;
+    color:aliceblue;
+    font-size: 20px;
 }
-
-tr:nth-child(even), table.list thread> tr{
-    background-color: rgb(204,200,200);
+nav .section ul,
+nav .section ul a{
+    /* margin-right: 40%; */
+    display: flex;
+    list-style:none;
+    gap:30px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
 }
-
-input[type="text"],input[type="number"]{
-    width:91%;
-    padding:12px 20px;
-    margin:8px 0;
-    display: inline-block;
-    border: 1px solid rgb(165,161,161);
-    border-radius: 4px;
+.mid{
+    background-color: bisque;
 }
+.mid img{
+    width: 40%;
+    height: 30%;
+    margin-left: 50%;
 
-input[type="submit"],input[type="reset"]{
-    background: #eee;
-    padding:6px 12px;
-    margin:15px 0 10px;
-    display: inline-block;
-    border: none;
-    border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    outline: none;
 }
-
-input[type="submit"]:hover{
-    background: #4b99d8;
+.container .mail, .building, .call{
+    color:white;
+    text-decoration: none;
 }
-
-input[type="reset"]:hover{
-    background: #4b99d8;
+.mid .text{
+    position: absolute;
+    left: 40px;
+    top : 40%;
+    padding: 40px;
+    height: auto;
+    width:40%;
+    font-size: 24px;
 }
-
-button{
-    background: #eee;
-    padding:6px 12px;
-    margin:15px 0 10px;
-    display: inline-block;
-    border: none;
-    border-radius: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    outline: none;
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
 }
-
-button:hover{
-    background:#4b99d8 ;
+.head ul{
+    display:flex;
+    list-style:none;
+    gap:30px; 
 }
-
+.mid button{
+background-color: orangered;
+font-size: 15px;
+padding: 15px;
+}
+.services .text{
+    position: absolute;
+    margin-top:680px;
+    float: right;
+    right: 30px;
+    padding: 40px;
+    height: auto;
+    width:40%;
+    font-size: 20px;
+    text-decoration: none;
+}
+.services .text i{
+    text-decoration: none;
+}
+.services .text .fa-users-rectangle, .fa-headset{
+    padding-right: 10px;
+    color: rgb(235, 101, 12);
+    scale: 1.5;
+}
+.services img{
+    width: 40%;
+    height: 40%;
+    padding: 80px;
+}
+.services2{
+    background:rgb(213, 215, 221);
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    
+}
+.services2 .heading{
+    position: absolute;
+    margin-top:1320px;
+    float: left;
+    left:120px;
+    padding: 40px;
+    height: auto;
+    width:40%;
+    font-size: 26px;
+}
+.services2 .Para{
+    position: absolute;
+    margin-top:1320px;
+    float: right;
+    right: 0px;
+    padding: 40px;
+    height: auto;
+    width:50%;
+    text-align: justify;
+    font-size: 18px;
+}
+.services2 .img1 img{
+    margin-top:130px;
+    padding-left: 0px;
+    width: 450px;
+    height: 300px;
+    border: 10px solid whitesmoke;
+    border-radius:20px;
+}
+.services2 .img2 img{
+    margin-top:130px;
+    padding-right: 0px;
+    width: 450px;
+    height: 300px;
+    border: 10px solid whitesmoke;
+    border-radius:20px;
+}
+.heading3{
+     position: absolute;
+    margin-top:1750px;
+    float: right;
+    left: 750px;
+    padding: 40px;
+    height: auto;
+    width:40%;
+    font-size: 18px;
+}
+.heading2{
+     position: absolute;
+    margin-top:1750px;
+    float: left;
+    left: 180px;
+    padding: 40px;
+    height: auto;
+    width:40%;
+    font-size: 18px;
+}
+.reason{
+    background-color: rgb(84, 87, 92);
+    display: flex;
+    justify-content: space-around;
+}                      
+.reason .image img{
+    margin-top: 45px;
+    padding-right: 500px;
+    width: 450px;
+    height: 500px;
+}
+.reason .text{
+    position: absolute;
+    margin-top:1920px;
+    float: right;
+    left: 670px;
+    padding: 30px;
+    height: auto;
+    width:40%;
+    font-size: 18px; 
+}
+.team{
+    position: absolute;
+    margin-top:2450px;
+    float: left;
+    left: 0px;
+    padding: 30px;
+    height: auto;
+    width:40%;
+    font-size: 18px;  
+}
+.para{
+    position: absolute;
+    margin-top:2450px;
+    float: right;
+    right: 40px;
+    padding: 30px;
+    height: auto;
+    width:60%;
+    font-size: 18px; 
+}
+.reason .text .fa-user-pen, .fa-cloud-arrow-up, .fa-database{
+    padding-right: 12px;
+    color: orangered;
+    scale: 1.5;
+}
